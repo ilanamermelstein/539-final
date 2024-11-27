@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Preahvihear">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Play MusicalGuessr</title>
+</head>
+<body>
+    <header>
+        <div class="heading">
+        <h1>Play MusicalGuessr</h1>
+        <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <nav>
+            <ul id="navLinks">
+                <li class="menu"><a href="index.html">Home</a></li>
+                <li class="menu"><a href="instructions.html">How To Play</a></li>
+                <li class="menu"><a href="about.html">About the Game</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Round <span id="round"></span> of 10</h2>
+        <h2>Score: <span id="currentScore"></span></h2>
+        <br>
+        <h3>Guess the musical!</h3>
+        <br>
+        <p><b>Summary:</b> <span id="musicalSummary"></span></p>
+        <p><b>Year at the Tony Awards:</b> <span id="yearOfNom"></span></p>
+        <br>
+        <form>
+            <label for="guess"><b>The Musical Is:</b></label>
+            <input type="text" id="guess" name="guess" placeholder="Type Your Guess Here">
+        </form>
+        <br>
+        <button type="submit" id="submitGuess">Guess</button>
+        <br>
+        <p id="correct"></p>
+        <br>
+        <p>Remaining Guesses for This Round: <span id="remainingGuesses"></span></p>
+    </main>
+    <script src="js/finalproj.js"></script>
+</body>
+</html>
