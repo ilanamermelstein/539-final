@@ -8,15 +8,19 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.png"> 
+    <!-- favicon from https://github.com/twitter/twemoji/blob/master/assets/svg/1f3ad.svg -->
         <title>Final Score</title>
     </head>
     <body>
+        <div class = skip>
+            <a href = "#finalscore_main">Skip to Main Content</a>
+            </div>
         <header>
             <div class="heading">
             <h1>Final Score</h1>
-            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
-                <i class="fa fa-bars"></i>
-              </a>
+            <img src="images/right.png" class="icon">
+            <!-- <a href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by HideMaru - Flaticon</a> -->
             </div>
             <nav>
                 <ul id="navLinks">
@@ -31,7 +35,7 @@
             <p><span id="finalMessage"></span></p>
             <h2>Correct Guesses: <span id="correctGuesses"></span></h2>
             <br>
-            <button class="playButton" id="playAgain">Play Again!</button>
+            <button class="playButton" id="playAgain"><a href=play.html>Play Again!</a></button>
         </main>
     <script src="js/finalproj.js"></script>
     </body>
