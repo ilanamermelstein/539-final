@@ -1,6 +1,3 @@
-import musicals from '/musicals.json';
-console.log("Musicals loaded");
-
 function hamburgerMenu() {
     const x = document.querySelector("#navLinks");
     if (x.style.display === "none") {
@@ -10,6 +7,9 @@ function hamburgerMenu() {
     }
     console.log("Hamburger Menu Clicked");
   };
+
+import musicals from '/musicals.json';
+console.log("Musicals loaded");
 
 document.getElementById("playHome").addEventListener("click", roundOne);
 document.getElementById("playAgain").addEventListener("click", roundOne);
